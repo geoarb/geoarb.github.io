@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>GeoAR.js demo</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+    <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+    <script>
+        THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
+    </script>
+</head>
+
+<body style='margin: 0; overflow: hidden;'>
+<a-scene
+        vr-mode-ui="enabled: false"
+        embedded
+        arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;">
+    <a-camera gps-camera rotation-reader></a-camera>
+    <a-text value="Hello Belarus4!" color="#F10B32" position="0 0 -3" ></a-text>
+    <a-text value="Жыве !"
+            font="arial-msdf.json"
+            color="#33C3F0"
+            negate="false">
+    </a-text>
+    <a-text value="Жыве Беларусь!" font="arial-msdf.json" font-image="arial-msdf.png" negate="false" position="-1 0 -3"></a-text>
+</a-scene>
+</body>
+</html>
+
+</a-entity>
+</a-scene>
+</body>
