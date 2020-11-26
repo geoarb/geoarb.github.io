@@ -1,8 +1,4 @@
 const loadPlaces = function (coords) {
-    // COMMENT FOLLOWING LINE IF YOU WANT TO USE STATIC DATA AND ADD COORDINATES IN THE FOLLOWING 'PLACES' ARRAY
-    // const method = 'api';
-    const method = 'static';
-
     const PLACES = [
         {
             name: "Hello!",
@@ -18,12 +14,14 @@ const loadPlaces = function (coords) {
                 lng: 27.666209, // add here longitude if using static data
             }
         },
+        {
+            name: 'Хто здесь?',
+            location: {
+                lat: 53.906102,
+                lng: 27.531874484405677
+            }
+        }
     ];
-
-    if (method === 'api') {
-        return loadPlaceFromAPIs(coords);
-    }
-
     return Promise.resolve(PLACES);
 };
 
@@ -46,16 +44,10 @@ window.onload = () => {
                         text.setAttribute('position', '-1 0 -3');
                         text.setAttribute('color', '#FF0000');
                         // text.setAttribute('scale', '120 120 120');
-                        // text.setAttribute('look-at', "[gps-camera]");
+                        text.setAttribute('look-at', "[gps-camera]");
                         text.setAttribute('font', "arial-msdf.json");
                         text.setAttribute('negate', "false");
                         // // add place name
-                        // const text = document.createElement('a-link');
-                        // text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-                        // text.setAttribute('title', place.name);
-                        // text.setAttribute('href', 'http://www.example.com/');
-                        // text.setAttribute('scale', '20 20 20');
-
                         text.addEventListener('loaded', () => {
                             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
                         });
@@ -68,7 +60,7 @@ window.onload = () => {
         {
             enableHighAccuracy: true,
             maximumAge: 0,
-            timeout: 27000,
+            timeout: 5000,
         }
     );
 };
