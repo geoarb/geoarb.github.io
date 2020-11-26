@@ -1,7 +1,7 @@
 const loadPlaces = function (coords) {
     const PLACES = [
         {
-            name: "Hello!",
+            name: "Жыве Беларусь!",
             location: {
                 lat: coords.latitude, // add here latitude if using static data
                 lng: coords.longitude, // add here longitude if using static data
@@ -40,7 +40,7 @@ window.onload = () => {
 
                         const text = document.createElement('a-text');
                         text.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-                        text.setAttribute('value', 'Жыве Беларусь!');
+                        text.setAttribute('value', place.name);
                         text.setAttribute('position', '-1 0 -3');
                         text.setAttribute('color', '#FF0000');
                         // text.setAttribute('scale', '120 120 120');
