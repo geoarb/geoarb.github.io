@@ -1,0 +1,11 @@
+Model Information:
+* title:	Knight with Flag
+* source:	https://sketchfab.com/3d-models/knight-with-flag-9c3a9431b925482e89024bf08fe33210
+* author:	Paul Bourke (https://sketchfab.com/pbourke)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Knight with Flag" (https://sketchfab.com/3d-models/knight-with-flag-9c3a9431b925482e89024bf08fe33210) by Paul Bourke (https://sketchfab.com/pbourke) licensed under SKETCHFAB Standard (https://sketchfab.com/licenses)
