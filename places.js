@@ -46,6 +46,7 @@ window.onload = () => {
                         // text.setAttribute('scale', '120 120 120');
                         text.setAttribute('look-at', "[gps-camera]");
                         text.setAttribute('font', "arial-msdf.json");
+                        text.setAttribute('font-image', "arial-msdf.png");
                         text.setAttribute('negate', "false");
                         // // add place name
                         text.addEventListener('loaded', () => {
